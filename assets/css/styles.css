@@ -1,0 +1,108 @@
+:root{
+    --pmry-colo--color: red;
+    --secd-colo--color: black;
+    ---semi--colo--color: #fff;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem; 
+    flex-wrap: wrap;
+}
+p{
+    font-size: 1.7rem;
+}
+
+/* youtube section */
+.youtube-wrapper{
+    border: 1px solid #ddd;
+    width: 300px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#sub-btn{
+    padding: 0.5rem 0.7rem;
+    background-color: var(--pmry-colo--color);
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.subscribed-active{
+    background-color: #ffffff;
+    color: var(--pmry-colo--color);
+    border: 1px solid #ddd;
+}
+
+/* game section */
+.game-wrapper{
+    border: 1px solid #ddd;
+    width: 300px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-wrapper>.buttons>button{
+    padding: 0.5rem 0.7rem;
+    background-color: var(--secd-colo--color);
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: var(---semi--colo--color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+/* amazon-shipping-calculator */
+.amazon-shipping-calculator{
+    border: 1px solid #ddd;
+    width: 300px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;   
+}
+#input-field{
+    display: flex;
+    gap: 1rem;
+}
+#input-value{
+    flex: 8;
+    outline: none;
+    border: 1px solid #79777780;
+    padding: 0.5rem 0.7rem;
+    border-radius: 2px;
+    transition: border 0.3s ease-in-out;
+}
+#input-value:focus{
+    border: 1px solid greenyellow;
+}
+#input-field>button{
+    flex: 2;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
