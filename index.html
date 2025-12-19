@@ -33,12 +33,56 @@
         <p>Orders under $40 = + $10 shipping.</p>
         <p>Orders Over $40 = <b>FREE</b> shipping.</p>
         <div id="input-field">
-            <input type="text" id="input-value" placeholder="Cost of order">
+            <input type="text" id="input-value" placeholder="Cost of order" autocomplete="off" onkeydown="
+                keyControl(event)
+                ">
             <button id="amazon-button">Calculate</button>
         </div>
         <h2 id="amazon-result"></h2>
      </div>
 
+     <!-- -----head and tail----------- -->
+      <div class="head-tail">
+            <div class="buttons">
+                <button class="head-tail-btn" id="head">Heads</button>
+                <button class="head-tail-btn" id="tail">Tails</button>
+            </div>
+            <h2 id="htb-text"></h2>
+      </div>
+
+      <!-- ----------pop-up------------- -->
+       <div class="popup">
+            <button id="open-popup-btn">Open</button>
+            <div class="popup-box">
+                <button id="close-popup-btn">Close</button>
+            </div>
+       </div>
+       <!-- --------on and off buttons------ -->
+        <div class="on-of-button">
+            <div class="controls">
+                <button class="control-btn" id="gaming">Gaming</button>
+                <button class="control-btn" id="music">Music</button>
+                <button class="control-btn" id="tech">Tech</button>
+            </div>
+        </div>
+        <!-- ---------todo------------------- -->
+        <div class="todo">
+            <h2>ToDo List</h2>
+            <div class="input-field">
+                <input type="text" id="toDoInput" placeholder="Add ToDo" autocomplete="off">
+                <input type="date" id="toDoDate">
+                <button id="toDoBtn">Add</button>
+            </div>
+            <div class="toDOList" id="toDOList">
+                
+            </div>  
+
+            <div class="empty-todo" id="empty-todo">
+                <button id="empty-todo-btn">!Ok</button>
+                <p>Pleas enter a todo and date</p>
+            </div>
+
+        </div>
 
     <script src="assets/js/script.js"></script>
 </body>
